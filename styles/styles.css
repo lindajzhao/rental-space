@@ -155,6 +155,7 @@ h1, h2, h3, h4, a, blockquote, blockquote p, ul {
     margin: 20px 0;
     line-height: 2;
     color: #acacac;
+    text-transform: initial;
 }
 
 .text--center {
@@ -291,7 +292,7 @@ footer {
 
 /* middle box */
 .field__footer {
-    background: #0590d4;
+    background: #03a9f4;
     width: 40%;
     min-height: 86px;
     padding: 0 40px;
@@ -542,7 +543,7 @@ About - offerings Box
 }
 .offerings .wrapper {
     padding-bottom: 70px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #8c8c8c;
     
 }
 .offeringsBox {
@@ -612,6 +613,17 @@ About and Main - Testimonials
 }
 
 
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+Home page
 
 
 
@@ -620,49 +632,257 @@ About and Main - Testimonials
 
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 
-
-
-
-
-
-
-
-
-
-
-
+/* 
+~~~~~~~~~~~~~~~~~~
+Home - Hero
+~~~~~~~~~~~~~~~~~~
+*/
 .homePage .hero {
     background: url(../assets/heroHome.jpg);
-    padding-top: 70vh;
+    padding-top: 40vh;
 }
 
+.wrap--calloutBox {
+
+}
 .calloutBox {
     width: calc( (100% / 3) - (20px / 3) );
     margin-right: 10px;
     min-height: 100px;
-    background: #0a71aa;
+    background: rgba(20, 32, 64, 0.9);
     float: left;
+    border-radius: 5px;
+    border: #03a9f4 solid 3px;
+    padding: 15px 8px;
+    text-align: center;
+}
+.calloutBox p {
+    margin: 0;
 }
 
 .calloutBox.box3 {
     margin-right: 0;
 }
 
-
-
-
-
-
-/* property */
-.propertyTypes .wrapper {
-    background: #142040;
-
+.calloutBox.active {
+    background: #03a9f4;
 }
-.wrap--propertyBox {
 
+
+/* 
+~~~~~~~~~~~~~~~~~~
+Home - Property Types
+~~~~~~~~~~~~~~~~~~
+*/
+
+.propertyTypes .layout__fourCol {
+    background: #132040;
+    border-bottom: 1px #8c8c8c solid;
+    margin: 80px 0;
+}
+
+.propertyBox {
+    width: 25%;
+    float: left;
+    border-right: #242F65;
+    padding: 50px 0 50px 120px; /*off center with more left padding*/
 }
 
 .propertyBox span {
+    display: block; /*one word on top line*/
+}
+
+.propertyBox .heading--small {
+    text-align: left;
+}
+
+/* position the big letter */
+.propertyBox {
+    position: relative;
+    border-right: #203266 1px solid;
+}
+.propertyBox::before {
+    content: "F";
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    position: absolute;
+    left: 35%;
+    top: 29%;
+}
+
+.propertyBox.propertyBox2::before {
+    content: "H";
+}
+
+.propertyBox.propertyBox3::before {
+    content: "S";
+}
+
+.propertyBox.propertyBox4::before {
+    content: "O";
+}
+/* 
+~~~~~~~~~~~~~~~~~~
+Home - For Sale and For Rent
+~~~~~~~~~~~~~~~~~~
+*/
+.wrap--galleryNav .heading--sectionHeading {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.layout__fourColMargin> * {
+    width: calc( (100% / 4) - (30px / 4) );
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.layout__fourColMargin> *:last-of-type {
+    margin-right: 0;
+    border-right: none;
+}
+
+.callout--price {
+    min-width: 35px;
+    background: #03a9f4;
+    color: white;
+    font-size: 13px;
+    padding: 3px 6px;
+    position: absolute;
+    bottom: 58px;
+    left: -7px;
+}
+
+.thumbnail figcaption {
+    color: #474747;
+}
+
+.nav__toggle--inline {
+    display: inline-block;
+}
+
+
+/* 
+~~~~~~~~~~~~~~~~~~
+Home - company promo
+~~~~~~~~~~~~~~~~~~
+*/
+
+.textField__companyPromoDescription, .textField__companyPromoList {
+    float: left;
+    padding: 10px;
+}
+
+.textField__companyPromoDescription {
+    width: 60%;
+}
+
+.textField__companyPromoList {
+    width: 40%;
+}
+
+.list--check {
+    display: inline-block;
+    padding-left: 1.7rem;
+    color: #acacac;
+    margin: 0;
+
+}
+
+.list--check li {
+    padding: 5px 8px;
+    position: relative;
+
+    
+}
+
+/* position absolute for blue circle */
+
+.list--check li:before {
+    content: ""; 
+    margin-left: -2em; 
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: #03a9f4;
+    /* padding-left: 1px; */
+    position: absolute;
+    left: 10px;
+    top: 13px;
+
+}
+
+/* position absolute for white arrow */
+.list--check li:after {
+    content: "\f00c"; 
+    font-family: FontAwesome;
+    color: white;
+    display: inline-block;
+    margin-left: -2em; 
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    font-size: 10px;
+    left: 2px;
+    top: 11px;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~
+Home - company promo
+~~~~~~~~~~~~~~~~~~
+*/
+
+
+.news {
+    background: #142040;
+    padding: 100px 0;
+}
+
+.newsItem {
+    min-height: 250px;
+    padding-bottom: 40px;
+}
+
+/* the highlighter gray bar under the 1st news article */
+.newsItem.active::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.64);
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
     display: block;
+    border-radius: 3px;
+}
+.news .heading--sectionHeading {
+    display: inline-block;
+    text-align: left;
+}
+
+.text--newsDate {
+    color: #03a9f4;
+    font-size: 30px;
+    position: relative;
+}
+
+.text--newsDate::before {
+    content: "  ";
+    background: #03a9f4;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.wrap--news {
+    border-bottom: rgba(255, 255, 255, 0.21) 7px solid;
 }
