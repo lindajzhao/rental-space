@@ -13,45 +13,67 @@
 
 </head>
 <body class="aboutPage">
-    <header>
-        <div class="topBar">
-            <div class="wrapper clearfix">
-                <nav class="topBar__links--group1">
-                    <a href="#" class="link--topBar">English</a>
-                    <a href="#" class="link--topBar">About</a>
-                    <a href="#" class="link--topBar">Help</a>
-                </nav>
-                <nav class="topBar__links--group2">
-                    <a href="#" class="link--topBar">English</a>
-                    <a href="#" class="link--topBar">About</a>
-                    <a href="#" class="link--topBar">Help</a>
-                </nav>
+<header>
+    <div class="topBar">
+        <div class="wrapper clearfix">
+            <nav class="topBar__links--group1">
+                <a href="#" class="link--topBar">English</a>
+                <a href="#" class="link--topBar">About</a>
+                <a href="#" class="link--topBar">Help</a>
+            </nav>
+            <nav class="topBar__links--group2">
+                <a href="#" class="link--topBar">Favorite</a>
+                <a href="#" class="link--topBar">Login</a>
+                <a href="#" class="link--topBar">Register</a>
+            </nav>
+        </div>
+    </div>
+    <div class="header__middleRow wrapper clearfix">
+        <a href="index.html" class="logo__main">
+            <h1 class=" logo">
+                <span>Rental</span>Space
+            </h1>
+        </a>
+        <div class="wrap--headerSearchSocial clearfix">
+            <!-- search form -->
+            <form action="" class="form__searchSite form__mainNav">
+                <label for="search" class="visuallyHidden">Search:</label>
+                <input type="text" id="search">
+                <button>
+                    <i class="fa fa-search icon--form" aria-hidden="true"></i>
+                </button>
+                <!-- link for advanced search, positioned absolute to form -->
+                <a href="#" class="text--smallForm">Advanced Search</a>
+            </form>
+
+
+            <div class="wrap--headerSocial">
+                <a href="#">
+                    <i class="fa fa-phone icon--social" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook icon--social" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter icon--social" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest icon--social" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
-        <div class="header__middleRow wrapper clearfix">
-            <h1 class="logo__main logo"><span>Rental</span> Space</h1>
-            <div class="wrap--headerSearchSocial">
-                <form action="" class="form__searchSite"></form>
-                <div class="wrap--headerSocial">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-    
-                </div>
-            </div>
+    </div>
+    <div class="mainNav">
+        <div class="wrapper clearfix">
+            <a href="index.html" class="link--mainNav link--white">Home</a>
+            <a href="#" class="link--mainNav link--white">Property</a>
+            <a href="about.html" class="link--mainNav link--white">About</a>
+            <a href="#" class="link--mainNav link--white">Agents</a>
+            <a href="blog.html" class="link--mainNav link--white">Blog</a>
+            <a href="#" class="link--mainNav link--white">Contact</a>
         </div>
-        <div class="mainNav">
-            <div class="wrapper clearfix">
-                <a href="#" class="link--mainNav link--white">Home</a>
-                <a href="#" class="link--mainNav link--white">Home</a>
-                <a href="#" class="link--mainNav link--white">Home</a>
-                <a href="#" class="link--mainNav link--white">Home</a>
-                <a href="#" class="link--mainNav link--white">Home</a>
-                <a href="#" class="link--mainNav link--white">Home</a>
-            </div>
-        </div>
-    </header>
+    </div>
+</header>
 
     <section class="hero">
         <div class="wrapper">
@@ -68,14 +90,15 @@
             <h3 class="heading--sectionHeading">You are in good Company</h3>
             <div class="nav__toggle nav__toggle--center">
                 <a href="#" class="link__toggle active">History</a>
-                <a href="#" class="link__toggle active">About</a>
+                <a href="#" class="link__toggle ">About</a>
                 <a href="#" class="link__toggle">Press</a>
                 <a href="#" class="link__toggle">International</a>
             </div>
             <p class="text--regular text--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto modi ipsa voluptate libero cumque nam neque officiis suscipit temporibus? Architecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, accusamus.</p>
+            <div class="statsLine line1"></div>
+            <div class="statsLine line2"></div>
             <div class="statsCircle">
-                <hr class="line1">
-                <hr class="line2">
+                
                 <p class="logo__stats logo"><span>Rental</span>space</p>
                 <p class="statsCircleLabel label1"><span>43 500</span> properties</p>
                 <p class="statsCircleLabel label2"><span>24 900</span> customers</p>
@@ -87,7 +110,7 @@
      </section> <!-- / stats -->
 
      <section class="infobox layout__twoCol clearfix">
-         <div><img src="assets/womanbnw.jpg" alt="Black and white photo of woman looking to the right."></div>
+         <img src="assets/womanbnw.jpg" alt="Black and white photo of woman looking to the right.">
          <div>
              <div class="wrap--infobox">
                  <h3 class="heading--sectionHeading">We choose all the best for you</h3>
@@ -101,27 +124,27 @@
      <section class="offerings">
         <div class="wrapper clearfix">
             <h3 class="heading--sectionHeading">What we offer</h3>
-            <div class="offeringsBox offeringsBox1">
-                <img src="assets/map.png" alt="Cartoon image of a piggy bank">
+            <a href="#" class="offeringsBox offeringsBox1">
+                <img src="assets/icon-pig.png" alt="Piggy bank icon">
                 <h4 class="heading--small">We save your money</h4>
-            </div>
-            <div class="offeringsBox offeringsBox2">
-                <img src="assets/map.png" alt="Cartoon image of a piggy bank">
+            </a>
+            <a href="#" class="offeringsBox offeringsBox2">
+                <img src="assets/icon-map.png" alt="Map icon">
                 <h4 class="heading--small">We save your money</h4>
-            </div>
-            <div class="offeringsBox offeringsBox3">
-                <img src="assets/map.png" alt="Cartoon image of a piggy bank">
+            </a>
+            <a href="#" class="offeringsBox offeringsBox3">
+                <img src="assets/icon-plug.png" alt="Plug icon">
                 <h4 class="heading--small">We save your money</h4>
-            </div>
-            <div class="offeringsBox offeringsBox4">
-                <img src="assets/map.png" alt="Cartoon image of a piggy bank">
+            </a>
+            <a href="#" class="offeringsBox offeringsBox4">
+                <img src="assets/icon-roller.png" alt="Paint roller icon">
                 <h4 class="heading--small">We save your money</h4>
-            </div>
+            </a>
         </div>
      </section>
 
      <section class="testimonials">
-         <div class="wrapper ">
+         <div class="wrapper">
              <h3 class="heading--sectionHeading">Testimonials</h3>
              <div class="layout__threeCol clearfix">
                  <div class="wrap--testimonial threeCol__col">
@@ -132,8 +155,7 @@
                 </div> <!--/ col 1 -->
                 <div class="wrap--testimonial threeCol__col">
                     <blockquote class="quote__testimonials">
-                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores modi ea
-                            ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae deleniti numquam exercitationem
+                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae deleniti numquam exercitationem
                             repellat.</p>
                         <cite>Octavian Munteau - UI Designer</cite>
                     </blockquote>
@@ -141,9 +163,7 @@
                 <!--/ col 2 -->
                 <div class="wrap--testimonial threeCol__col">
                     <blockquote class="quote__testimonials">
-                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores modi ea
-                            ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae deleniti numquam exercitationem
-                            repellat.</p>
+                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis,itaque repudiandae deleniti numquam exercitationem repellat.</p>
                         <cite>Octavian Munteau - UI Designer</cite>
                     </blockquote>
                 </div>
@@ -152,50 +172,55 @@
         </div>
      </section>
 
-     <footer>
-       <div class="wrapper">
-            <div class="subscribeForm text--white clearfix">
-                <!-- left box -->
-                <div class="wrap--subscribeForm">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h4 class="heading--subscribeForm heading--sectionHeading text--white">Get Notified</h4>
-                    <p class="text--subscribeDescription text--smaller text--uppercase">Latest news, collections and much more</p>
-                </div>
-                <form action="" class="form__subscribe clearfix">
-                    <label for="subscribe" class="visuallyHidden">Email</label>
-                    <input type="text" id="subscribe" class="field__footer text--formPlaceholder text--white" placeholder="Your Email">
-                    <input type="submit" value = "Subscribe" class="heading--small btn__subscribe">
-                </form>
+<footer>
+    <div class="wrapper">
+        <div class="subscribeForm text--white clearfix">
+            <!-- left box -->
+            <div class="wrap--subscribeForm">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h4 class="heading--subscribeForm heading--sectionHeading text--white">Get Notified</h4>
+                <p class="text--subscribeDescription text--smaller text--uppercase">Latest news, collections and much more</p>
             </div>
-       </div> <!-- / wrapper and top part of footer-->
+            <form action="" class="form__subscribe clearfix">
+                <label for="subscribe" class="visuallyHidden">Email</label>
+                <input type="text" id="subscribe" class="field__footer text--formPlaceholder text--white" placeholder="Your Email">
+                <input type="submit" value="Subscribe" class="heading--small btn__subscribe">
+            </form>
+        </div>
+    </div>
+    <!-- / top part of footer-->
 
+    <!-- bottom part of footer with the map -->
+    <div class="footerMap">
+        <div class="wrapper">
+            <div class="wrap--footerAddress">
+                <h4 class="text--largeBold">0829 987 0000</h4>
+                <em class="text--em">info@rentalspace.com</em>
+                <ul class="text--larger">
+                    <li>Rental Space</li>
+                    <li>42 Oatind Road</li>
+                    <li>London</li>
+                    <li>LS1 8J2, West London</li>
+                </ul>
+                <div class="wrap--footerSocial clearfix">
+                    <a href="twitter.com">
+                        <i class="fa fa-facebook icon--footerSocial" aria-hidden="true"></i>
+                        <p class="text--white text--smaller">Facebook</p>
+                    </a>
 
-        <div class="footerMap">
-            <div class="wrapper">
-                <div class="wrap--footerAddress">
-                    <h4 class="text--largeBold">0829 987 0000</h4>
-                    <em class="text--em">info@rentalspace.com</em>
-                    <ul class="text--larger">
-                       <li>Rental Space</li>
-                       <li>42 Oatind Road</li>
-                       <li>London</li>
-                       <li>LS1 8J2, West London</li>
-                    </ul>
+                    <a href="twitter.com">
+                        <i class="fa fa-twitter icon--footerSocial" aria-hidden="true"></i>
+                        <p class="text--white text--smaller">Twitter</p>
+                    </a>
                 </div>
-                <div class="wrap--footerSocial">
-                    <div>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <p>Facebook</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <p>Facebook</p>
-                    </div>
-                </div>
-            </div> <!-- / wrapper-->
-        </div> <!-- / footerMap -->
+                <!--box for social icons-->
+            </div>
+            <!-- navy box-->
 
-     </footer>
-
+        </div>
+        <!-- / wrapper-->
+    </div>
+    <!-- / footerMap -->
+</footer>
 </body>
 </html>

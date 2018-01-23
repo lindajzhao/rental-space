@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<header>
+</header>
     <div class="topBar">
         <div class="wrapper clearfix">
             <nav class="topBar__links--group1">
@@ -21,39 +21,55 @@
                 <a href="#" class="link--topBar">Help</a>
             </nav>
             <nav class="topBar__links--group2">
-                <a href="#" class="link--topBar">English</a>
-                <a href="#" class="link--topBar">About</a>
-                <a href="#" class="link--topBar">Help</a>
+                <a href="#" class="link--topBar">Favorite</a>
+                <a href="#" class="link--topBar">Login</a>
+                <a href="#" class="link--topBar">Register</a>
             </nav>
         </div>
     </div>
+
     <div class="header__middleRow wrapper clearfix">
-        <h1 class="logo__main logo">
-            <span>Rental</span> Space</h1>
-        <div class="wrap--headerSearchSocial">
-            <form action="" class="form__searchSite">
+        <a href="index.html" class="logo__main">
+            <h1 class=" logo">
+                <span>Rental</span>Space
+            </h1>
+        </a>
+        <div class="wrap--headerSearchSocial clearfix">
+            <!-- search form -->
+            <form action="" class="form__searchSite form__mainNav">
                 <label for="search" class="visuallyHidden">Search:</label>
                 <input type="text" id="search">
                 <button>
                     <i class="fa fa-search icon--form" aria-hidden="true"></i>
                 </button>
+                <!-- link for advanced search, positioned absolute to form -->
+                <a href="#" class="text--smallForm">Advanced Search</a>
             </form>
+
+            
             <div class="wrap--headerSocial">
-                <i class="fa fa-phone icon--social" aria-hidden="true"></i>
-                <i class="fa fa-facebook icon--social" aria-hidden="true"></i>
-                <i class="fa fa-twitter icon--social" aria-hidden="true"></i>
-                <i class="fa fa-pinterest icon--social" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-phone icon--social" aria-hidden="true"></i></a>
+                <a href="#">
+                    <i class="fa fa-facebook icon--social" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter icon--social" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest icon--social" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </div>
+
     <div class="mainNav">
         <div class="wrapper clearfix">
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
+            <a href="index.html" class="link--mainNav link--white">Home</a>
+            <a href="#" class="link--mainNav link--white">Property</a>
+            <a href="about.html" class="link--mainNav link--white">About</a>
+            <a href="#" class="link--mainNav link--white">Agents</a>
+            <a href="blog.html" class="link--mainNav link--white">Blog</a>
+            <a href="#" class="link--mainNav link--white">Contact</a>
         </div>
     </div>
 </header>
@@ -86,7 +102,7 @@
         </div>
 
         <article class="blogPost blogPost2">
-            <img src="assets/blog2.jpg" alt="Urban photograph of walls full of graffiti art, two teens with hoodies sitting on the roof."
+            <img src="assets/blog2.jpg" alt="Photo of a ginger cat"
                 class="image__blog">
             <div class="wrap--blogDescription">
                 <h3 class="blogText--title">How to buy your first home with no money</h3>
@@ -104,7 +120,7 @@
         </article>
 
         <article class="blogPost blogPost3">
-            <img src="assets/blog3.jpg" alt="Urban photograph of walls full of graffiti art, two teens with hoodies sitting on the roof."
+            <img src="assets/blog3.jpg" alt="Photo of a smiling woman wearing sunglasses"
                 class="image__blog">
             <div class="wrap--blogDescription">
                 <h3 class="blogText--title">How to buy your first home with no money</h3>
@@ -125,7 +141,7 @@
             </div>
         </article>
 
-        <div class="blogPagination clearfix">
+        <div class="blogPagination">
             <a href="@" class="btn__blogNav blogNav--previous">Previous Page</a>
             <div class="blogNav__numbers clearfix">
                 <a href="#" class="btn__blogNav active">1</a>
@@ -140,120 +156,128 @@
     </main>
 
     <aside class="blog">
-        <form action="" class="blog__search" class="blog__search">
-            <label for="blog__search" class="sidebarTitle">Search</label>
-            <input type="text">
+        <form action="" class="form__searchSite form__blog">
+            <label for="search" class="heading--aside">Search:</label>
+            <input type="text" id="search">
+            <button>
+                <i class="fa fa-search icon--form" aria-hidden="true"></i>
+            </button>
         </form>
         <!-- beginning of 2nd section of sidebar (archive) -->
-        <div class="blogSidebar__section blogSidebar--categories">
-            <!-- Beginning of the left side of categories: link and title -->
-            <div class="blogSidebar__section--group blogSidebar__section--categories1">
-                <h4 class="sidebarTitle">Categories</h4>
+        <section class="blogSidebarSection clearfix">
+            <h4 class="heading--aside">Categories</h4>
+            <!-- left -->
+            <div class="half">
                 <ul>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Business</a>
+                        <a href="#" class="link--blogSidebar">Business</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Money</a>
+                        <a href="#" class="link--blogSidebar">Money</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Music</a>
+                        <a href="#" class="link--blogSidebar">Music</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Movies</a>
+                        <a href="#" class="link--blogSidebar">Movies</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Photography</a>
+                        <a href="#" class="link--blogSidebar">Photography</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Travel</a>
+                        <a href="#" class="link--blogSidebar">Travel</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Sport</a>
+                        <a href="#" class="link--blogSidebar">Sport</a>
                     </li>
                 </ul> 
-            </div><!--end of left side of categories-->
-            <!-- beginning of the right side of categories -->
-            <div class="blogSidebar__section--group blogSidebar__section--categories2">
+            </div>
+            
+            <!-- right-->
+            <div class="half">
                 <ul>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Business</a>
+                        <a href="#" class="link--blogSidebar">Business</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Money</a>
+                        <a href="#" class="link--blogSidebar">Money</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Music</a>
+                        <a href="#" class="link--blogSidebar">Music</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Movies</a>
+                        <a href="#" class="link--blogSidebar">Movies</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Photography</a>
+                        <a href="#" class="link--blogSidebar">Photography</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Travel</a>
+                        <a href="#" class="link--blogSidebar">Travel</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">Sport</a>
-                    </li>
-                </ul>
-            </div><!--end of group 2 archive-->
-        </div><!-- end of archive-->
-        
-        <!-- beginning of 3rd section of sidebar (archive) -->
-        <div class="blogSidebar__section blogSidebar--archive">
-            <!-- Beginning of the left side of archive: link and title -->
-            <div class="blogSidebar__section--group blogSidebar__section--categories1">
-                <h4 class="sidebarTitle">Categories</h4>
-                <ul>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">January 2014</a>
-                    </li>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">Feburary 2014</a>
-                    </li>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">March 2014</a>
-                    </li>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">April 2014</a>
-                    </li>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">May 2014</a>
-                    </li>
-                    <li>
-                        <a href="#" class="blogSidebar__section--link">June 2014</a>
+                        <a href="#" class="link--blogSidebar">Sport</a>
                     </li>
                 </ul>
             </div>
-            <!--end of left side of archive-->
-            <!-- beginning of the right side of archive -->
-            <div class="blogSidebar__section--group blogSidebar__section--archive2">
+            
+        </section><!-- end of archive-->
+        
+        <!-- beginning of 3rd section of sidebar (archive) -->
+        <section class="blogSidebarSection clearfix">
+            <h4 class="heading--aside">Categories</h4>
+            <!-- left -->
+            <div class="half">
                 <ul>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">July 2014</a>
+                        <a href="#" class="link--blogSidebar">January 2014</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">August 2014</a>
+                        <a href="#" class="link--blogSidebar">Feburary 2014</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">September 2014</a>
+                        <a href="#" class="link--blogSidebar">March 2014</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">October 2014</a>
+                        <a href="#" class="link--blogSidebar">April 2014</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">November 2014</a>
+                        <a href="#" class="link--blogSidebar">May 2014</a>
                     </li>
                     <li>
-                        <a href="#" class="blogSidebar__section--link">December 2014</a>
+                        <a href="#" class="link--blogSidebar">June 2014</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- right-->
+            <div class="half">
+                <ul>
+                    <li>
+                        <a href="#" class="link--blogSidebar">July 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link--blogSidebar">August 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link--blogSidebar">September 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link--blogSidebar">October 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link--blogSidebar">November 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link--blogSidebar">December 2014</a>
                     </li>
                 </ul>
             </div>
             <!--end of group 2 archive-->
-        </div>
+        </section>
         <!-- end of archive-->
+
+        <!-- twitter embed -->
+        <a class="twitter-timeline" data-height="500" href="https://twitter.com/envato?ref_src=twsrc%5Etfw">Tweets by envato</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </aside>
 </div><!-- wrapper-->
 

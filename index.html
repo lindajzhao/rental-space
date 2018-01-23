@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 1 - About</title>
+    <title>Project 1 - Home</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,48 +13,68 @@
 
 </head>
 <body class="homePage">
-<header>
-    <div class="topBar">
-        <div class="wrapper clearfix">
-            <nav class="topBar__links--group1">
-                <a href="#" class="link--topBar">English</a>
-                <a href="#" class="link--topBar">About</a>
-                <a href="#" class="link--topBar">Help</a>
-            </nav>
-            <nav class="topBar__links--group2">
-                <a href="#" class="link--topBar">English</a>
-                <a href="#" class="link--topBar">About</a>
-                <a href="#" class="link--topBar">Help</a>
-            </nav>
-        </div>
+</header>
+<div class="topBar">
+    <div class="wrapper clearfix">
+        <nav class="topBar__links--group1">
+            <a href="#" class="link--topBar">English</a>
+            <a href="#" class="link--topBar">About</a>
+            <a href="#" class="link--topBar">Help</a>
+        </nav>
+        <nav class="topBar__links--group2">
+            <a href="#" class="link--topBar">Favorite</a>
+            <a href="#" class="link--topBar">Login</a>
+            <a href="#" class="link--topBar">Register</a>
+        </nav>
     </div>
-    <div class="header__middleRow wrapper clearfix">
-        <h1 class="logo__main logo">
-            <span>Rental</span> Space</h1>
-        <div class="wrap--headerSearchSocial">
-            <form action="" class="form__searchSite">
-                <label for="search" class="visuallyHidden">Search:</label>
-                <input type="text" id="search">
-                <button><i class="fa fa-search icon--form" aria-hidden="true"></i></button>
-            </form>
-            <div class="wrap--headerSocial">
+</div>
+
+<div class="header__middleRow wrapper clearfix">
+    <a href="index.html" class="logo__main">
+        <h1 class=" logo">
+            <span>Rental</span>Space
+        </h1>
+    </a>
+    <div class="wrap--headerSearchSocial clearfix">
+        <!-- search form -->
+        <form action="" class="form__searchSite form__mainNav">
+            <label for="search" class="visuallyHidden">Search:</label>
+            <input type="text" id="search">
+            <button>
+                <i class="fa fa-search icon--form" aria-hidden="true"></i>
+            </button>
+            <!-- link for advanced search, positioned absolute to form -->
+            <a href="#" class="text--smallForm">Advanced Search</a>
+        </form>
+
+
+        <div class="wrap--headerSocial">
+            <a href="#">
                 <i class="fa fa-phone icon--social" aria-hidden="true"></i>
+            </a>
+            <a href="#">
                 <i class="fa fa-facebook icon--social" aria-hidden="true"></i>
+            </a>
+            <a href="#">
                 <i class="fa fa-twitter icon--social" aria-hidden="true"></i>
+            </a>
+            <a href="#">
                 <i class="fa fa-pinterest icon--social" aria-hidden="true"></i>
-            </div>
+            </a>
         </div>
     </div>
-    <div class="mainNav">
-        <div class="wrapper clearfix">
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-            <a href="#" class="link--mainNav link--white">Home</a>
-        </div>
+</div>
+
+<div class="mainNav">
+    <div class="wrapper clearfix">
+        <a href="index.html" class="link--mainNav link--white">Home</a>
+        <a href="#" class="link--mainNav link--white">Property</a>
+        <a href="about.html" class="link--mainNav link--white">About</a>
+        <a href="#" class="link--mainNav link--white">Agents</a>
+        <a href="blog.html" class="link--mainNav link--white">Blog</a>
+        <a href="#" class="link--mainNav link--white">Contact</a>
     </div>
+</div>
 </header>
 
 <main>
@@ -124,14 +144,14 @@
                 <!-- thumbnail 1/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale1.jpg" alt="">
+                        <img src="assets/sale1.jpg" alt="photo of a house with a large red sloped roof">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds <span class="callout--price">£43,000</span></figcaption>
                     </figure>
                 </a>
                 <!-- thumbnail 2/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale2.jpg" alt="">
+                        <img src="assets/sale2.jpg" alt="photo of large house with white walls in front of a hill">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -140,7 +160,7 @@
                 <!-- thumbnail 3/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale3.jpg" alt="">
+                        <img src="assets/sale3.jpg" alt="photo of the Flatiron building">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -149,7 +169,7 @@
                 <!-- thumbnail 4/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale4.jpg" alt="">
+                        <img src="assets/sale4.jpg" alt="Photo of a large apartment building">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -163,7 +183,7 @@
         <div class="wrapper clearfix">
             <!-- gallery header and nav -->
             <div class="wrap--galleryNav">
-                <h3 class="heading--sectionHeading">For Sale</h3>
+                <h3 class="heading--sectionHeading">For Rent</h3>
                 <div class="nav__toggle--inline">
                     <a href="#" class="link__toggle active">Flats</a>
                     <a href="#" class="link__toggle">Houses</a>
@@ -176,7 +196,7 @@
                 <!-- thumbnail 1/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale1.jpg" alt="">
+                        <img src="assets/rent1.jpg" alt="Photo of shiny windows of an office building">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -185,7 +205,7 @@
                 <!-- thumbnail 2/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale2.jpg" alt="">
+                        <img src="assets/rent2.jpg" alt="Photo of a street full of narrow colorful houses">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -194,7 +214,7 @@
                 <!-- thumbnail 3/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale3.jpg" alt="">
+                        <img src="assets/rent3.jpg" alt="Photo of two brink townhouses">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
@@ -203,7 +223,7 @@
                 <!-- thumbnail 4/4 -->
                 <a href="#" class="thumbnail">
                     <figure>
-                        <img src="assets/sale4.jpg" alt="">
+                        <img src="assets/rent4.jpg" alt="Photo of a large tree in front of a brick townhouse">
                         <figcaption class="text--regular">1 Bedroom flat in Leeds
                             <span class="callout--price">£43,000</span>
                         </figcaption>
