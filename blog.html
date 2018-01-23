@@ -57,161 +57,205 @@
         </div>
     </div>
 </header>
+<div class="wrapper blogHeading">
+    <h2 class="heading--page">Blog</h2>
+</div> 
 
-<main class="blog">
-    <div class="wrapper"></div>
-        <h2 class="pageName">Blog</h2>
+<!-- NOTE: there is one wrapper for everything! -->
+<div class="wrapper clearfix">
+    <!-- blog and aside are floated next to each other -->
+    <main class="blog">
         <article class="blogPost blogPost1">
-            <img src="" alt="" class="blogPost__blogImage">
-            <div class="blogPost__info">
-                <h3 class="blogPost--title">How to buy your first home with no money</h3>
-                <p class="blogPost--detail">
+            <img src="assets/blog1.jpg" alt="Urban photograph of walls full of graffiti art, two teens with hoodies sitting on the roof." class="image__blog">
+            <div class="wrap--blogDescription">
+                <h3 class="blogText--title">How to buy your first home with no money</h3>
+                <p class="blogText--details">
                     <span>December 10th, 2017</span>
-                    <span>By <a href="#">Nicolas Tipton</a></span>
-                    <span>Investigation</span>
+                    <span>By <a href="#" class="link--blog">Nicolas Tipton</a></span>
+                    <span><a href="#" class="link--blog">Investigation</a></span>
                 </p>
-                <p class="blogPost--blurb regularText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quae corrupti delectus architecto, iure earum nam laudantium at nemo veritatis numquam quisquam, illum odit! Culpa, enim id! Libero doloremque beatae voluptatibus sint earum, id natus aliquam quam ipsam molestiae dolorum, eveniet nam. Deserunt nihil, corrupti labore numquam qui dolores sequi eos repudiandae beatae ex quas veritatis, tempora dolorum similique dicta voluptatem nisi molestiae, commodi obcaecati alias voluptas fugit aperiam assumenda. Consectetur recusandae suscipit sapiente quibusdam reiciendis fugiat hic libero provident quidem voluptates, molestiae, dolor exercitationem illo. Incidunt assumenda atque alias quia officia numquam, veniam distinctio velit iure eius labore eaque totam quaerat molestiae neque dolorum libero nostrum nobis quisquam deserunt earum. Nostrum vero itaque, asperiores, illum nisi non molestias eaque praesentium optio voluptatum quia odit officiis quos sit laborum dolores voluptates consectetur. Consequuntur nisi soluta non culpa neque dolor quas incidunt blanditiis excepturi numquam tempora, ad accusamus nobis deleniti nihil! <a href="#">Continue Reading</a></p>
+                <p class="blogPost--blurb text--regular">Lorem ipsum dolor, sit amet consectetur adipisicing elitobcaecati alias voluptrat molestiae neque dolorum libero nostrum nobis quisquam deserunt earum. Ne excepturi numquam tempora, ad accusamus nobis deleniti nihil! <a href="#" class="link--blog">Continue Reading</a></p>
             </div>
         </article>
 
         <div class="blog__quote">
             <blockquote>
                 <p>Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.</p>
-                <cite>Bernard M. Baruch</cite>
+                <cite>- Bernard M. Baruch</cite>
             </blockquote>
         </div>
 
-        <div class="blogPagination">
-            <a href="@" class="blogPagination__button previous">Previous Page</a>
-            <div>
-                <a href="#" class="blogPagination__button button--num button--active">1</a>
-                <a href="#" class="blogPagination__button button--num">2</a>
-                <a href="#" class="blogPagination__button button--num">3</a>
-                <a href="#" class="blogPagination__button button--num">4</a>
-                <a href="#" class="blogPagination__button button--num">...</a>
-                <a href="#" class="blogPagination__button button--num">17</a>
+        <article class="blogPost blogPost2">
+            <img src="assets/blog2.jpg" alt="Urban photograph of walls full of graffiti art, two teens with hoodies sitting on the roof."
+                class="image__blog">
+            <div class="wrap--blogDescription">
+                <h3 class="blogText--title">How to buy your first home with no money</h3>
+                <p class="blogText--details">
+                    <span>December 10th, 2017</span>
+                    <span>By
+                        <a href="#" class="link--blog">Nicolas Tipton</a>
+                    </span>
+                    <span>
+                        <a href="#" class="link--blog">Investigation</a>
+                    </span>
+                </p>
+                
             </div>
-            <a href="@" class="blogPagination__button next button--active">Next Page</a>
-        </div>
-    </div>
-</main>
+        </article>
 
-<aside class="blogSidebar">
-    <form action="" class="blog__search" class="blog__search">
-        <label for="blog__search" class="sidebarTitle">Search</label>
-        <input type="text">
-    </form>
-    <!-- beginning of 2nd section of sidebar (archive) -->
-    <div class="blogSidebar__section blogSidebar--categories">
-        <!-- Beginning of the left side of categories: link and title -->
-        <div class="blogSidebar__section--group blogSidebar__section--categories1">
-            <h4 class="sidebarTitle">Categories</h4>
-            <ul>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Business</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Money</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Music</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Movies</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Photography</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Travel</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Sport</a>
-                </li>
-            </ul> 
-        </div><!--end of left side of categories-->
-        <!-- beginning of the right side of categories -->
-        <div class="blogSidebar__section--group blogSidebar__section--categories2">
-            <ul>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Business</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Money</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Music</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Movies</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Photography</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Travel</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Sport</a>
-                </li>
-            </ul>
-        </div><!--end of group 2 archive-->
-    </div><!-- end of archive-->
-    
-    <!-- beginning of 3rd section of sidebar (archive) -->
-    <div class="blogSidebar__section blogSidebar--archive">
-        <!-- Beginning of the left side of archive: link and title -->
-        <div class="blogSidebar__section--group blogSidebar__section--categories1">
-            <h4 class="sidebarTitle">Categories</h4>
-            <ul>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">January 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">Feburary 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">March 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">April 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">May 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">June 2014</a>
-                </li>
-            </ul>
+        <article class="blogPost blogPost3">
+            <img src="assets/blog3.jpg" alt="Urban photograph of walls full of graffiti art, two teens with hoodies sitting on the roof."
+                class="image__blog">
+            <div class="wrap--blogDescription">
+                <h3 class="blogText--title">How to buy your first home with no money</h3>
+                <p class="blogText--details">
+                    <span>December 10th, 2017</span>
+                    <span>By
+                        <a href="#" class="link--blog">Nicolas Tipton</a>
+                    </span>
+                    <span>
+                        <a href="#" class="link--blog">Investigation</a>
+                    </span>
+                </p>
+                <p class="blogPost--blurb text--regular">Lorem ipsum dolor, sit amet consectetur adipisicing elitobcaecati alias voluptrat molestiae neque dolorum libero
+                    nostrum nobis quisquam deserunt earum. Ne excepturi numquam tempora, ad accusamus nobis deleniti nihil!
+                    <a href="#"
+                        class="link--blog">Continue Reading</a>
+                </p>
+            </div>
+        </article>
+
+        <div class="blogPagination clearfix">
+            <a href="@" class="btn__blogNav blogNav--previous">Previous Page</a>
+            <div class="blogNav__numbers clearfix">
+                <a href="#" class="btn__blogNav active">1</a>
+                <a href="#" class="btn__blogNav">2</a>
+                <a href="#" class="btn__blogNav">3</a>
+                <a href="#" class="btn__blogNav">4</a>
+                <a href="#" class="btn__blogNav">...</a>
+                <a href="#" class="btn__blogNav">17</a>
+            </div>
+            <a href="@" class="btn__blogNav blogNav--next active">Next Page</a>
         </div>
-        <!--end of left side of archive-->
-        <!-- beginning of the right side of archive -->
-        <div class="blogSidebar__section--group blogSidebar__section--archive2">
-            <ul>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">July 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">August 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">September 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">October 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">November 2014</a>
-                </li>
-                <li>
-                    <a href="#" class="blogSidebar__section--link">December 2014</a>
-                </li>
-            </ul>
+    </main>
+
+    <aside class="blog">
+        <form action="" class="blog__search" class="blog__search">
+            <label for="blog__search" class="sidebarTitle">Search</label>
+            <input type="text">
+        </form>
+        <!-- beginning of 2nd section of sidebar (archive) -->
+        <div class="blogSidebar__section blogSidebar--categories">
+            <!-- Beginning of the left side of categories: link and title -->
+            <div class="blogSidebar__section--group blogSidebar__section--categories1">
+                <h4 class="sidebarTitle">Categories</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Business</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Money</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Music</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Photography</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Travel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Sport</a>
+                    </li>
+                </ul> 
+            </div><!--end of left side of categories-->
+            <!-- beginning of the right side of categories -->
+            <div class="blogSidebar__section--group blogSidebar__section--categories2">
+                <ul>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Business</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Money</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Music</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Photography</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Travel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Sport</a>
+                    </li>
+                </ul>
+            </div><!--end of group 2 archive-->
+        </div><!-- end of archive-->
+        
+        <!-- beginning of 3rd section of sidebar (archive) -->
+        <div class="blogSidebar__section blogSidebar--archive">
+            <!-- Beginning of the left side of archive: link and title -->
+            <div class="blogSidebar__section--group blogSidebar__section--categories1">
+                <h4 class="sidebarTitle">Categories</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">January 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">Feburary 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">March 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">April 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">May 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">June 2014</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end of left side of archive-->
+            <!-- beginning of the right side of archive -->
+            <div class="blogSidebar__section--group blogSidebar__section--archive2">
+                <ul>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">July 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">August 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">September 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">October 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">November 2014</a>
+                    </li>
+                    <li>
+                        <a href="#" class="blogSidebar__section--link">December 2014</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end of group 2 archive-->
         </div>
-        <!--end of group 2 archive-->
-    </div>
-    <!-- end of archive-->
-</aside>
+        <!-- end of archive-->
+    </aside>
+</div><!-- wrapper-->
 
 <footer>
     <div class="wrapper">

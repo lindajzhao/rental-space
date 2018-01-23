@@ -94,6 +94,12 @@ h1, h2, h3, h4, a, blockquote, blockquote p, ul {
     padding: 0;
 }
 /* Headings */
+.heading--page {
+    font-size: 72px;
+    font-weight: 900;
+    padding: 20px 0 30px 0;
+    border-bottom: #e5e5e5 1px solid;
+}
 .heading--bigText {
     font-size: 72px;
     color: white;
@@ -979,3 +985,159 @@ Blog Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
+/* 
+~~~~~~~~~~~~~~~~~~
+Blog - Set up the page: main is 60$ aside if 40%
+~~~~~~~~~~~~~~~~~~
+*/
+.blog a {
+    text-transform: initial;
+}
+.blogHeading {
+    margin: 30px auto;
+}
+
+main.blog {
+    width: 66.666%;
+}
+
+aside.blog {
+    width: 33.333%;
+}
+
+.blog {
+    float: left;
+}
+
+
+.wrap--blogDescription {
+    background:#f9f9f9;
+    font-size: 12px;
+    color: #8c8c8c;
+    padding: 50px 40px;
+}
+
+/* blog typography  */
+.blogText--title {
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+}
+
+.blogText--details {
+    font-style: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+.blogText--details span {
+    padding: 0 10px;
+    position: relative;
+}
+
+.blogText--details span::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -4px;
+}
+
+.blogText--details span:last-of-type::after {
+    content: "";
+}
+
+.link--blog {
+    color: #03a9f4;
+}
+
+.blogPost, .blog__quote {
+    margin: 40px 0;
+}
+
+.blogPost1 {
+    margin-top: 0;
+}
+
+/* Blockquotes */
+    
+
+.blog__quote {
+    background: #03a9f4;
+    padding: 50px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.blog__quote p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0;
+    z-index: 20;
+}
+
+/* blue quotes in the background ?? */
+.blog__quote p::after {
+    content: url(../assets/blogQuote.png);
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    z-index: 10;
+}
+
+
+.blog__quote cite {
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    
+}
+
+/* Pagination */
+
+.blogPagination {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: #d1d1d1 1px solid;
+}
+
+.blogNav__button, .blogNav__numbers {
+    float: left;
+    display: inline-block;
+}
+
+/* left btn 20% + number btns 25%+right btn 20%=35% left over */
+.blogNav--previous, .blogNav--next {
+    width: 20%;
+}
+
+.blogNav__numbers {
+    width: 25%;
+}
+
+/* 35% spread over 2 margins */
+.blogNav--previous, .blogNav__numbers {
+    margin-right: calc(35% / 2);
+}
+
+/* distribute 6 buttons evenly in the middle div */
+.blogNav__numbers a {
+    margin-right: 2px;
+    width: calc( (100% / 6) - 2px);
+}
+
+.blogNav__button.active {
+    background: #03a9f4;
+}
+
+
+.btn__blogNav {
+    border-radius: 3px;
+    background-color:  #d1d1d1;
+    padding: 3px 6px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    min-height: 17px;
+}
