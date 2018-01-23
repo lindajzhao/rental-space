@@ -234,17 +234,65 @@ Header
     /* padding-bottom: 20px; */
 }
 
-.logo--main {
+/* logo takes up 50% and the search+social takes up 50% */
+.logo__main {
     float: left;
+    min-height: 29px;
+    width: 50%;
+    max-width: 465px;
 }
+
 .wrap--headerSearchSocial {
     float: right;
+    min-height: 29px;
+    width: 50%;
 }
 
-.wrap--headerSocial {
-    margin-top: 5px;
+.wrap--headerSocial, .form__searchSite {
+    float: left;
 }
 
+/* Formating search form below... */
+.form__searchSite {
+    width: 60%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.form__searchSite, .form__searchSite>* {
+    min-height: 29px;
+}
+
+.form__searchSite input {
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    border-width: 1px;
+    background-color:  #fafafa;
+    width: 100%;
+}
+
+.fa.icon--social {
+    width: 29px;
+    height: 29px;
+    border-radius: 3px;
+    background: #cfd8dc;
+    color: #fff;
+    padding: 6px 6px 6px 8px;
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.form__searchSite button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background: transparent;
+    border: none;
+}
+.fa.fa-search {
+    font-size: 20px;
+    color: #cfd8dc;
+}
 
 /* main nav bar */
 
@@ -277,9 +325,7 @@ Footer
 footer {
     background: #03a9f4;
 }
-/* .subscribeForm {
-    padding: 20px 0;
-} */
+
 
 /* left box */
 .wrap--subscribeForm {
@@ -292,7 +338,7 @@ footer {
 
 /* middle box */
 .field__footer {
-    background: #03a9f4;
+    background: rgba(20, 32, 64, 0.18);
     width: 40%;
     min-height: 86px;
     padding: 0 40px;
@@ -309,8 +355,11 @@ footer {
 
 form input {
     border: none;
-    float: left;
     display: inline-block;
+}
+
+.subscribeForm input {
+    float: left;
 }
 
 .fa.fa-envelope {
@@ -340,9 +389,36 @@ form input {
 }
 
 .wrap--footerAddress ul {
-    margin-top: 50px;
+    margin: 50px 0 20px 0;
 }
 
+/* position icons next to link */
+.wrap--footerSocial a p {
+    width: 50%;
+    display: inline-block;
+}
+
+/* position the 2 links beside each other*/
+.wrap--footerSocial a {
+    float: left;
+    display: inline-block;
+    border-bottom: 1px solid #3b5998;
+    margin-right: 10px;
+
+
+}
+
+.fa.icon--footerSocial {
+    padding-right: 9px;
+    font-size: 16px;
+}
+
+.icon--footerSocial.fa-facebook {
+    color: #3b5998;
+}
+.icon--footerSocial.fa-twitter {
+    color: #0084b4;
+}
 .text--largeBold {
     font-size: 30px;
     font-weight: 700;
@@ -886,3 +962,20 @@ Home - company promo
 .wrap--news {
     border-bottom: rgba(255, 255, 255, 0.21) 7px solid;
 }
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+Blog Page
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/

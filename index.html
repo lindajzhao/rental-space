@@ -32,13 +32,16 @@
         <h1 class="logo__main logo">
             <span>Rental</span> Space</h1>
         <div class="wrap--headerSearchSocial">
-            <form action="" class="form__searchSite"></form>
+            <form action="" class="form__searchSite">
+                <label for="search" class="visuallyHidden">Search:</label>
+                <input type="text" id="search">
+                <button><i class="fa fa-search icon--form" aria-hidden="true"></i></button>
+            </form>
             <div class="wrap--headerSocial">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-
+                <i class="fa fa-phone icon--social" aria-hidden="true"></i>
+                <i class="fa fa-facebook icon--social" aria-hidden="true"></i>
+                <i class="fa fa-twitter icon--social" aria-hidden="true"></i>
+                <i class="fa fa-pinterest icon--social" aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -54,310 +57,311 @@
     </div>
 </header>
 
-    <main>
-        <div class="hero">
-            <div class="wrapper clearfix">
-                <div class="wrap--calloutBox">
-                    <h2 class="heading--bigText">Best spaces for the cheapest prices in the UK</h2>
-                    <div class="calloutBox box1 active">
-                        <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
-                    </div>
-                    <div class="calloutBox box2">
-                        <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
-                    </div>
-                    <div class="calloutBox box3">
-                        <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
-                    </div>
+<main>
+    <div class="hero">
+        <div class="wrapper clearfix">
+            <div class="wrap--calloutBox">
+                <h2 class="heading--bigText">Best spaces for the cheapest prices in the UK</h2>
+                <div class="calloutBox box1 active">
+                    <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
+                </div>
+                <div class="calloutBox box2">
+                    <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
+                </div>
+                <div class="calloutBox box3">
+                    <p class="text--regular text--white">Modern 2 bedroom for rent. Harrogate, $550 per month, recently refurbished.</p>
                 </div>
             </div>
         </div>
-        <!-- / hero section -->
+    </div>
+    <!-- / hero section -->
 
-        <section class="propertyTypes">
-            <div class="wrapper">
-                <div class="layout__fourCol clearfix">
-                    <!-- 1/4 box -->
-                    <a href="#" class="propertyBox propertyBox1">
-                        <div class="text--propertyType">
-                            <h3 class="heading--small"><span>Flats</span> for sale</h3>
-                        </div>
-                    </a>
-                    <!-- 2/4 box -->
-                    <a href="#" class="propertyBox propertyBox2">
-                        <div class="text--propertyType">
-                            <h3 class="heading--small"><span>Houses</span> for sale</h3>
-                        </div>
-                    </a>
-                    <!-- 3/4 box -->
-                    <a href="#" class="propertyBox propertyBox3">
-                        <div class="text--propertyType">
-                            <h3 class="heading--small"><span>Spaces</span>to rent</h3>
-                        </div>
-                    </a>
-                    <!-- 4/4 box -->
-                    <a href="#" class="propertyBox propertyBox4">
-                        <div class="text--propertyType">
-                            <h3 class="heading--small"><span>Office</span>space</h3>
-                        </div>
-                    </a>
+    <section class="propertyTypes">
+        <div class="wrapper">
+            <div class="layout__fourCol clearfix">
+                <!-- 1/4 box -->
+                <a href="#" class="propertyBox propertyBox1">
+                    <div class="text--propertyType">
+                        <h3 class="heading--small"><span>Flats</span> for sale</h3>
+                    </div>
+                </a>
+                <!-- 2/4 box -->
+                <a href="#" class="propertyBox propertyBox2">
+                    <div class="text--propertyType">
+                        <h3 class="heading--small"><span>Houses</span> for sale</h3>
+                    </div>
+                </a>
+                <!-- 3/4 box -->
+                <a href="#" class="propertyBox propertyBox3">
+                    <div class="text--propertyType">
+                        <h3 class="heading--small"><span>Spaces</span>to rent</h3>
+                    </div>
+                </a>
+                <!-- 4/4 box -->
+                <a href="#" class="propertyBox propertyBox4">
+                    <div class="text--propertyType">
+                        <h3 class="heading--small"><span>Office</span>space</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="forSale">
+        <div class="wrapper clearfix">
+            <!-- gallery header and nav -->
+            <div class="wrap--galleryNav">
+                <h3 class="heading--sectionHeading">For Sale</h3>
+                <div class="nav__toggle--inline">
+                    <a href="#" class="link__toggle active">Flats</a>
+                    <a href="#" class="link__toggle">Houses</a>
+                    <a href="#" class="link__toggle">Offices</a>
                 </div>
             </div>
-        </section>
+            
+            <!-- div with 4 thumbnails in a row -->
+            <div class="layout__fourColMargin">
+                <!-- thumbnail 1/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale1.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds <span class="callout--price">£43,000</span></figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 2/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale2.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 3/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale3.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 4/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale4.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section> <!-- / for sale section -->
+
+    <section class="forRent">
+        <div class="wrapper clearfix">
+            <!-- gallery header and nav -->
+            <div class="wrap--galleryNav">
+                <h3 class="heading--sectionHeading">For Sale</h3>
+                <div class="nav__toggle--inline">
+                    <a href="#" class="link__toggle active">Flats</a>
+                    <a href="#" class="link__toggle">Houses</a>
+                    <a href="#" class="link__toggle">Offices</a>
+                </div>
+            </div>
     
-        <section class="forSale">
-            <div class="wrapper clearfix">
-                <!-- gallery header and nav -->
-                <div class="wrap--galleryNav">
-                    <h3 class="heading--sectionHeading">For Sale</h3>
-                    <div class="nav__toggle--inline">
-                        <a href="#" class="link__toggle active">Flats</a>
-                        <a href="#" class="link__toggle">Houses</a>
-                        <a href="#" class="link__toggle">Offices</a>
-                    </div>
+            <!-- div with 4 thumbnails in a row -->
+            <div class="layout__fourColMargin">
+                <!-- thumbnail 1/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale1.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 2/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale2.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 3/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale3.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- thumbnail 4/4 -->
+                <a href="#" class="thumbnail">
+                    <figure>
+                        <img src="assets/sale4.jpg" alt="">
+                        <figcaption class="text--regular">1 Bedroom flat in Leeds
+                            <span class="callout--price">£43,000</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="companyPromo">
+        <div class="wrapper clearfix">
+            <div class="textField__companyPromoDescription">
+                <h3 class="heading--sectionHeading">Your are in good company</h3>
+                <p class="text--regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium hic quas alias suscipit id itaque minus incidunt molestias, autem doloribus similique ea excepturi a dolore. Repudiandae voluptate, quia animi eligendi blanditiis dolor eaque vitae consectetur voluptatem adipisci iure nemo.</p>
+                <p class="text--regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium hic quas alias suscipit id itaque minus incidunt
+                    molestias, autem doloribus similique ea excepturi a dolore. Repudiandae voluptate, quia animi eligendi blanditiis dolor
+                    eaque vitae consectetur voluptatem adipisci iure nemo.</p>
+            </div>
+            <div class="textField__companyPromoList">
+                <h3 class="heading--sectionHeading">Why Choose Us</h3>
+                <ul class="list--check text--regular">
+                    <li>No Contract Term - rolling monthly</li>
+                    <li>Quia animi eligendi blanditiis</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit!</li>
+                    <li>Quia animi eligendi blanditiis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="wrapper">
+            <h3 class="heading--sectionHeading text--white">Latest News</h3>
+            <div class="wrap--news layout__fourColMargin clearfix">
+                <article class="newsItem active">
+                    <p class="text--newsDate">20.12</p>
+                    <p class="text--regular text--white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti ex eveniet amet ab.
+                    </p>
+                    <div class="nav__newsScroller nav__newsScroller--active"></div>
+                </article>
+                <article class="newsItem">
+                    <p class="text--newsDate">20.12</p>
+                    <p class="text--regular text--white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibu.
+                    </p>
+                    <div class="nav__newsScroller"></div>
+                </article>
+                <article class="newsItem">
+                    <p class="text--newsDate">20.12</p>
+                    <p class="text--regular text--white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti
+                        ex evenie.
+                    </p>
+                    <div class="nav__newsScroller"></div>
+                </article>
+                <article class="newsItem">
+                    <p class="text--newsDate">20.12</p>
+                    <p class="text--regular text--white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti
+                        ex eveniet amet ab.
+                    </p>
+                    <div class="nav__newsScroller"></div>
+                </article>
+        </div>
+
+        </div> <!-- / news wrapper -->
+    </section>
+
+    <section class="testimonials">
+        <div class="wrapper ">
+            <h3 class="heading--sectionHeading">Testimonials</h3>
+            <div class="layout__threeCol clearfix">
+                <div class="wrap--testimonial threeCol__col">
+                    <blockquote class="quote__testimonials">
+                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
+                            modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
+                            deleniti numquam exercitationem repellat.</p>
+                        <cite>Octavian Munteau - UI Designer</cite>
+                    </blockquote>
                 </div>
+                <!--/ col 1 -->
+                <div class="wrap--testimonial threeCol__col">
+                    <blockquote class="quote__testimonials">
+                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
+                            modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
+                            deleniti numquam exercitationem repellat.
+                        </p>
+                        <cite>Octavian Munteau - UI Designer</cite>
+                    </blockquote>
+                </div>
+                <!--/ col 2 -->
+                <div class="wrap--testimonial threeCol__col">
+                    <blockquote class="quote__testimonials">
+                        <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
+                            modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
+                            deleniti numquam exercitationem repellat.
+                        </p>
+                        <cite>Octavian Munteau - UI Designer</cite>
+                    </blockquote>
+                </div>
+                <!--/ col 3 -->
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="wrapper">
+        <div class="subscribeForm text--white clearfix">
+            <!-- left box -->
+            <div class="wrap--subscribeForm">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h4 class="heading--subscribeForm heading--sectionHeading text--white">Get Notified</h4>
+                <p class="text--subscribeDescription text--smaller text--uppercase">Latest news, collections and much more</p>
+            </div>
+            <form action="" class="form__subscribe clearfix">
+                <label for="subscribe" class="visuallyHidden">Email</label>
+                <input type="text" id="subscribe" class="field__footer text--formPlaceholder text--white" placeholder="Your Email">
+                <input type="submit" value="Subscribe" class="heading--small btn__subscribe">
+            </form>
+        </div>
+    </div>
+    <!-- / top part of footer-->
+
+    <!-- bottom part of footer with the map -->
+    <div class="footerMap">
+        <div class="wrapper">
+            <div class="wrap--footerAddress">
+                <h4 class="text--largeBold">0829 987 0000</h4>
+                <em class="text--em">info@rentalspace.com</em>
+                <ul class="text--larger">
+                    <li>Rental Space</li>
+                    <li>42 Oatind Road</li>
+                    <li>London</li>
+                    <li>LS1 8J2, West London</li>
+                </ul>
+                <div class="wrap--footerSocial clearfix">
+                    <a href="twitter.com">
+                        <i class="fa fa-facebook icon--footerSocial" aria-hidden="true"></i>
+                        <p class="text--white text--smaller">Facebook</p>
+                    </a>
                 
-                <!-- div with 4 thumbnails in a row -->
-                <div class="layout__fourColMargin">
-                    <!-- thumbnail 1/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale1.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds <span class="callout--price">£43,000</span></figcaption>
-                        </figure>
+                    <a href="twitter.com">
+                        <i class="fa fa-twitter icon--footerSocial" aria-hidden="true"></i>
+                        <p class="text--white text--smaller">Twitter</p>
                     </a>
-                    <!-- thumbnail 2/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale2.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- thumbnail 3/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale3.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- thumbnail 4/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale4.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </section> <!-- / for sale section -->
-
-        <section class="forRent">
-            <div class="wrapper clearfix">
-                <!-- gallery header and nav -->
-                <div class="wrap--galleryNav">
-                    <h3 class="heading--sectionHeading">For Sale</h3>
-                    <div class="nav__toggle--inline">
-                        <a href="#" class="link__toggle active">Flats</a>
-                        <a href="#" class="link__toggle">Houses</a>
-                        <a href="#" class="link__toggle">Offices</a>
-                    </div>
-                </div>
-        
-                <!-- div with 4 thumbnails in a row -->
-                <div class="layout__fourColMargin">
-                    <!-- thumbnail 1/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale1.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- thumbnail 2/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale2.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- thumbnail 3/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale3.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- thumbnail 4/4 -->
-                    <a href="#" class="thumbnail">
-                        <figure>
-                            <img src="assets/sale4.jpg" alt="">
-                            <figcaption class="text--regular">1 Bedroom flat in Leeds
-                                <span class="callout--price">£43,000</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="companyPromo">
-            <div class="wrapper clearfix">
-                <div class="textField__companyPromoDescription">
-                    <h3 class="heading--sectionHeading">Your are in good company</h3>
-                    <p class="text--regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium hic quas alias suscipit id itaque minus incidunt molestias, autem doloribus similique ea excepturi a dolore. Repudiandae voluptate, quia animi eligendi blanditiis dolor eaque vitae consectetur voluptatem adipisci iure nemo.</p>
-                    <p class="text--regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium hic quas alias suscipit id itaque minus incidunt
-                        molestias, autem doloribus similique ea excepturi a dolore. Repudiandae voluptate, quia animi eligendi blanditiis dolor
-                        eaque vitae consectetur voluptatem adipisci iure nemo.</p>
-                </div>
-                <div class="textField__companyPromoList">
-                    <h3 class="heading--sectionHeading">Why Choose Us</h3>
-                    <ul class="list--check text--regular">
-                        <li>No Contract Term - rolling monthly</li>
-                        <li>Quia animi eligendi blanditiis</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit!</li>
-                        <li>Quia animi eligendi blanditiis</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="news">
-            <div class="wrapper">
-                <h3 class="heading--sectionHeading text--white">Latest News</h3>
-                <div class="wrap--news layout__fourColMargin clearfix">
-                    <article class="newsItem active">
-                        <p class="text--newsDate">20.12</p>
-                        <p class="text--regular text--white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti ex eveniet amet ab.
-                        </p>
-                        <div class="nav__newsScroller nav__newsScroller--active"></div>
-                    </article>
-                    <article class="newsItem">
-                        <p class="text--newsDate">20.12</p>
-                        <p class="text--regular text--white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibu.
-                        </p>
-                        <div class="nav__newsScroller"></div>
-                    </article>
-                    <article class="newsItem">
-                        <p class="text--newsDate">20.12</p>
-                        <p class="text--regular text--white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti
-                            ex evenie.
-                        </p>
-                        <div class="nav__newsScroller"></div>
-                    </article>
-                    <article class="newsItem">
-                        <p class="text--newsDate">20.12</p>
-                        <p class="text--regular text--white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo officiis esse, temporibus consectetur aspernatur corrupti
-                            ex eveniet amet ab.
-                        </p>
-                        <div class="nav__newsScroller"></div>
-                    </article>
-            </div>
-
-            </div> <!-- / news wrapper -->
-        </section>
-
-        <section class="testimonials">
-            <div class="wrapper ">
-                <h3 class="heading--sectionHeading">Testimonials</h3>
-                <div class="layout__threeCol clearfix">
-                    <div class="wrap--testimonial threeCol__col">
-                        <blockquote class="quote__testimonials">
-                            <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
-                                modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
-                                deleniti numquam exercitationem repellat.</p>
-                            <cite>Octavian Munteau - UI Designer</cite>
-                        </blockquote>
-                    </div>
-                    <!--/ col 1 -->
-                    <div class="wrap--testimonial threeCol__col">
-                        <blockquote class="quote__testimonials">
-                            <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
-                                modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
-                                deleniti numquam exercitationem repellat.
-                            </p>
-                            <cite>Octavian Munteau - UI Designer</cite>
-                        </blockquote>
-                    </div>
-                    <!--/ col 2 -->
-                    <div class="wrap--testimonial threeCol__col">
-                        <blockquote class="quote__testimonials">
-                            <p class="text--regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis minima rerum numquam dolores
-                                modi ea ipsum quae fuga reiciendis? Odit natus fugit quo ex. Voluptate omnis, itaque repudiandae
-                                deleniti numquam exercitationem repellat.
-                            </p>
-                            <cite>Octavian Munteau - UI Designer</cite>
-                        </blockquote>
-                    </div>
-                    <!--/ col 3 -->
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-            <div class="wrapper">
-                <div class="subscribeForm text--white clearfix">
-                    <!-- left box -->
-                    <div class="wrap--subscribeForm">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <h4 class="heading--subscribeForm heading--sectionHeading text--white">Get Notified</h4>
-                        <p class="text--subscribeDescription text--smaller text--uppercase">Latest news, collections and much more</p>
-                    </div>
-                    <form action="" class="form__subscribe clearfix">
-                        <label for="subscribe" class="visuallyHidden">Email</label>
-                        <input type="text" id="subscribe" class="field__footer text--formPlaceholder text--white" placeholder="Your Email">
-                        <input type="submit" value="Subscribe" class="heading--small btn__subscribe">
-                    </form>
-                </div>
-            </div>
-            <!-- / wrapper and top part of footer-->
-        
-        
-            <div class="footerMap">
-                <div class="wrapper">
-                    <div class="wrap--footerAddress">
-                        <h4 class="text--largeBold">0829 987 0000</h4>
-                        <em class="text--em">info@rentalspace.com</em>
-                        <ul class="text--larger">
-                            <li>Rental Space</li>
-                            <li>42 Oatind Road</li>
-                            <li>London</li>
-                            <li>LS1 8J2, West London</li>
-                        </ul>
-                    </div>
-                    <div class="wrap--footerSocial">
-                        <div>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <p>Facebook</p>
-                        </div>
-                        <div>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <p>Facebook</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- / wrapper-->
-            </div>
-            <!-- / footerMap -->
-        
-    </footer>
+                </div> <!--box for social icons-->
+            </div> <!-- navy box-->
+            
+        </div>
+        <!-- / wrapper-->
+    </div>
+    <!-- / footerMap -->
+</footer>
 
 </body>
 </html>
